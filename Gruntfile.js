@@ -331,7 +331,7 @@ var _              = require('lodash'),
                 // Used as part of `grunt init`. See the section on [Building Assets](#building%20assets) for more
                 // information.
                 bower: {
-                    command: path.resolve(cwd + '/node_modules/.bin/bower --allow-root install'),
+                    command: 'GIT_DIR=/tmp ' + path.resolve(cwd + '/node_modules/.bin/bower --allow-root install'),
                     options: {
                         stdout: true,
                         stdin: false
